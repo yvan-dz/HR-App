@@ -1,0 +1,93 @@
+html, body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* 🏷️ Fokus-Stil */
+h1:focus {
+    outline: none;
+}
+
+/* 🔗 Links & Buttons */
+a, .btn-link {
+    color: #f39c12;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #d35400;
+    border-color: #c0392b;
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem #f5b041, 0 0 0 0.25rem #f39c12;
+}
+
+/* 🏗️ Seiten-Content */
+.content {
+    padding-top: 1.1rem;
+}
+
+.valid.modified:not([type=checkbox]) {
+    outline: 1px solid #27ae60;
+}
+
+.invalid {
+    outline: 1px solid #e74c3c;
+}
+
+.validation-message {
+    color: #e74c3c;
+}
+
+/* 🌀 Lade-Container (zentriert in der Mitte der Seite) */
+.loading-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Vertikale Zentrierung */
+    height: 100vh; /* Ganze Bildschirmhöhe */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* 🔄 Neuer Lade-Spinner mit Puls- und Rotationsanimation */
+.loading-spinner {
+    width: 80px;
+    height: 80px;
+    border: 6px solid rgba(255, 255, 255, 0.2);
+    border-top-color: #f39c12;
+    border-radius: 50%;
+    animation: spin 1s linear infinite, pulse 1.5s infinite alternate;
+}
+
+/* 🔄 Keyframes für die Dreh-Animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* 🔄 Keyframes für den Puls-Effekt */
+@keyframes pulse {
+    0% { box-shadow: 0px 0px 10px rgba(243, 156, 18, 0.5); }
+    100% { box-shadow: 0px 0px 25px rgba(243, 156, 18, 0.9); }
+}
+
+/* 📝 Lade-Text */
+.loading-text {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #f39c12;
+    animation: fadeIn 1.5s infinite alternate;
+}
+
+/* ✨ Sanfte Einblendanimation */
+@keyframes fadeIn {
+    0% { opacity: 0.6; }
+    100% { opacity: 1; }
+}

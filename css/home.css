@@ -1,0 +1,269 @@
+/* 🌟 Modernes, professionelles Farbschema */
+:root {
+    --primary-color: #D71920; /* Hauptfarbe Rot */
+    --secondary-color: #1D1D1B; /* Dunkles Grau */
+    --accent-color: #003C71; /* Nachtblau */
+    --background-color: #1E1E2E; /* Dunkler Hintergrund */
+    --card-background: #2A2A3B; /* Dunklere Karten */
+    --border-color: #3E3E4F; /* Dezente Ränder */
+    --text-color: #EAEAEA; /* Helles Grau für bessere Lesbarkeit */
+    --input-bg: #33334D; /* Dunkle Input-Felder */
+    --hover-color: #C4161A; /* Dunkleres Rot */
+    --button-hover: #E62E2E; /* Helleres Rot */
+}
+
+/* 🌍 Allgemeine Stile */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* 🎩 Header-Styling */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 🖼️ Logo-Styling */
+.logo {
+    height: 50px; /* Oder passe die Größe an */
+    width: auto;
+    margin-right: 15px; /* Abstand zum Titel */
+}
+
+/* 🏷️ Titel-Styling */
+.title {
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--text-color);
+    letter-spacing: 1px;
+}
+
+
+h3, .check {
+    color: white;
+}
+
+/* 📦 Container */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: var(--card-background);
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 🃏 Karten-Design */
+.card {
+    background: var(--card-background);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 25px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.result-card {
+    background: var(--accent-color);
+    color: white;
+    border: none;
+}
+
+/* 🏷 Labels & Eingaben */
+.input-label {
+    font-weight: bold;
+    margin-top: 12px;
+    display: block;
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+.input-field, .dropdown {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 16px;
+    background: var(--input-bg);
+    color: white;
+    box-shadow: inset 0px 3px 5px rgba(0, 0, 0, 0.2);
+    cursor: text;
+}
+
+/* Fix: Sicherstellen, dass Inputs klickbar sind */
+.input-field:focus, .dropdown:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0px 3px 6px rgba(215, 25, 32, 0.3);
+}
+
+/* 🎛 Buttons - Groß & Rund */
+button {
+    font-size: 32px; /* Größere Schrift */
+    padding: 18px 22px; /* Mehr Platz innen */
+    width: 100%;
+    border: none;
+    border-radius: 50px; /* Noch runder */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px; /* Mehr Abstand für Icons */
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔴 Hauptbutton (Berechnen) */
+.calculate-button {
+    background: var(--primary-color);
+    color: white;
+    box-shadow: 0px 6px 15px rgba(215, 25, 32, 0.4);
+    margin-top: 10px;
+    border-radius: 50px; 
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.calculate-button:hover {
+    background: var(--button-hover);
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 18px rgba(215, 25, 32, 0.5);
+}
+
+/* 📂 Speichern / Export Buttons */
+.save-button {
+    background: #004A98; /* Dunkles Blau */
+    color: white;
+    box-shadow: 0px 6px 15px rgba(0, 74, 152, 0.3);
+    margin-top: 10px;
+    border-radius: 50px; 
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.pdf-button {
+    background: #FF8C00; /* Professionelles Orange */
+    color: white;
+    box-shadow: 0px 6px 15px rgba(255, 140, 0, 0.3);
+    margin-top: 10px;
+    border-radius: 50px; 
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.save-button:hover {
+    background: #003366;
+    box-shadow: 0px 8px 18px rgba(0, 51, 102, 0.5);
+}
+
+.pdf-button:hover {
+    background: #E67E00;
+    box-shadow: 0px 8px 18px rgba(230, 126, 0, 0.5);
+}
+
+/* Klick-Effekt */
+button:active {
+    transform: scale(0.94);
+}
+
+
+/* 📝 Checkbox-Labels */
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* 🛠 Tooltip Container */
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* 🎯 Tooltip Icon */
+.tooltip-icon {
+    font-size: 14px;
+    cursor: pointer;
+    background: var(--accent-color);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 50%;
+    display: inline-block;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.tooltip-icon:hover {
+    background: var(--primary-color);
+}
+
+/* 📜 Tooltip-Text */
+.tooltip-text {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-10px);
+    background: #1e1e2e; /* Dunkles Blau-Grau */
+    color: #f0f0f0; /* Helles Grau für bessere Lesbarkeit */
+    padding: 12px 16px;
+    border-radius: 8px;
+    width: 260px;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: left;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+/* 💡 Tooltip Inhalt */
+.tooltip-text strong {
+    color: var(--primary-color);
+    font-size: 16px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.tooltip-text b {
+    color: #FFD700; /* Gold für wichtige Werte */
+}
+
+/* 🟢 Tooltip anzeigen */
+.tooltip-container:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+.tooltip-text.visible {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+/* JavaScript-gesteuerte Sichtbarkeit */
+.tooltip-text.active {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
