@@ -1,9 +1,9 @@
 {
   "mainAssemblyName": "HRWebApp",
   "resources": {
-    "hash": "sha256-T1g1MF8+rlTvFVQPoCgF09fxij4JyQKNFI/Tq2EMUmQ=",
+    "hash": "sha256-Ps21FQHGJNsKxnx2iWxtN+FVuYaMBO7tk0OLPSdGGQs=",
     "fingerprinting": {
-      "HRWebApp.ebzv361x0v.wasm": "HRWebApp.wasm",
+      "HRWebApp.m9gbon8p5m.wasm": "HRWebApp.wasm",
       "Microsoft.AspNetCore.Components.Forms.o9iakyungi.wasm": "Microsoft.AspNetCore.Components.Forms.wasm",
       "Microsoft.AspNetCore.Components.p153zsjumb.wasm": "Microsoft.AspNetCore.Components.wasm",
       "Microsoft.AspNetCore.Components.Web.uyv02bprzy.wasm": "Microsoft.AspNetCore.Components.Web.wasm",
@@ -94,7 +94,7 @@
       "System.Runtime.InteropServices.JavaScript.mwa725m7o8.wasm": "sha256-Cjdb0G7x7YHp1aN8K34JIjyB6iQIEsmMfoZJJ71ZuOw="
     },
     "assembly": {
-      "HRWebApp.ebzv361x0v.wasm": "sha256-is+Ue+nFTg8D68FHR3mtXlF1o7RiyqOK5NiscGWCgxY=",
+      "HRWebApp.m9gbon8p5m.wasm": "sha256-GrstecBnRH5aBkOBvWuioLKqafKj9ZqsTOHuVcoySJM=",
       "Microsoft.AspNetCore.Components.Forms.o9iakyungi.wasm": "sha256-/HaFHd6QQWcyHs5zTBqK/ImNoZNoWFYfSqtPRMdi9is=",
       "Microsoft.AspNetCore.Components.p153zsjumb.wasm": "sha256-Td+oXDI+RQx/wHTlZha8zd9mn2fX9FQsT7dIcCWeIYU=",
       "Microsoft.AspNetCore.Components.Web.uyv02bprzy.wasm": "sha256-1j+9uGkWsG0Vf9t63dqdDErjVMV0TW1fEJvN8J3CxYU=",

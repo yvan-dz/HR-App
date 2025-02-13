@@ -267,3 +267,36 @@ button:active {
     opacity: 1 !important;
 }
 
+/* 🏛 Styling für Gehaltsdetails */
+.salary-details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.salary-details li {
+    background: var(--card-background);
+    padding: 12px;
+    border-left: 5px solid var(--accent-color);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+}
+
+/* 🔹 Brutto-Gehalt mit Blau markieren */
+.salary-details li:first-child {
+    font-weight: bold;
+    border-left-color: var(--accent-color);
+}
+
+/* 💰 Total Brutto-Abzüge fett markieren */
+.salary-details li:last-child {
+    font-weight: bold;
+    color: var(--primary-color);
+    border-left-color: var(--button-hover);
+}
